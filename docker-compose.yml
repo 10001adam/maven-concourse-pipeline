@@ -28,6 +28,8 @@ services:
       CONCOURSE_POSTGRES_DATABASE: concourse
       CONCOURSE_ADD_LOCAL_USER: test:test
       CONCOURSE_MAIN_TEAM_LOCAL_USER: test
+      HTTP_PROXY=http://proxy.mms-dresden.de:8080
+      HTTPS_PROXY=http://proxy.mms-dresden.de:8080
     logging:
       driver: "json-file"
       options:
