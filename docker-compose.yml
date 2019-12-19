@@ -7,8 +7,6 @@ services:
       POSTGRES_DB: concourse
       POSTGRES_USER: concourse_user
       POSTGRES_PASSWORD: concourse_pass
-      HTTP_PROXY=http://proxy.mms-dresden.de:8080
-      HTTPS_PROXY=http://proxy.mms-dresden.de:8080
     logging:
       driver: "json-file"
       options:
@@ -30,8 +28,6 @@ services:
       CONCOURSE_POSTGRES_DATABASE: concourse
       CONCOURSE_ADD_LOCAL_USER: test:test
       CONCOURSE_MAIN_TEAM_LOCAL_USER: test
-      HTTP_PROXY=http://proxy.mms-dresden.de:8080
-      HTTPS_PROXY=http://proxy.mms-dresden.de:8080
     logging:
       driver: "json-file"
       options:
@@ -48,8 +44,6 @@ services:
     stop_signal: SIGUSR2
     environment:
       CONCOURSE_TSA_HOST: web:2222
-      HTTP_PROXY=http://proxy.mms-dresden.de:8080
-      HTTPS_PROXY=http://proxy.mms-dresden.de:8080
     logging:
       driver: "json-file"
       options:
